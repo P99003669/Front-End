@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Storage sessions</title>
+
+    </head>
+    <body>
+        <canvas id="myCanvas" width="100" height="100" style="border: 1px solid red;">
+        
+        </canvas>
+        
+
+        <canvas id="mycanvas" width="200" height="200" style="border: 1px solid orange">
+        </canvas>
+        <script>
+            var con=document.getElementById("mycanvas");
+            var cont = con.getContext("2d");
+            cont.beginPath();
+            cont.arc(100,100,100,0,2*Math.PI);
+            cont.stroke();
+            cont.fillStyle="#FF7F50";
+            cont.fillRect(40,40,120,100)
+            cont.font="30px cursive"
+            cont.strokeText("CANVAS!",25,100);
+        </script>
+        <script>
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            context.beginPath();
+            context.arc(50,50,50,0,2*Math.PI);
+            context.font="30px Arial";
+            context.stroke();
+             
+            context.fillStyle = "#DC143C";
+            
+            context.fillRect(20,20,60,60);
+            context.fillStyle = "#FF7F50";
+            context.fillRect(80,0,20,20);
+            context.fillRect(0,80,20,20);
+            context.fillRect(0,0,20,20);
+            context.fillRect(80,80,20,20);
+            
+
+            context.strokeText("Hello",15,60);
+            </script>
+    </body>
+</html>
